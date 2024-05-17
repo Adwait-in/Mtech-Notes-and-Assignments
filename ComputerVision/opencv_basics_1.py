@@ -24,6 +24,9 @@ cv.imshow('Road Image Resized', image_resized)
 gray = cv.cvtColor(image_resized, cv.COLOR_BGR2GRAY)
 cv.imshow('Gray Scale Image', gray)
 
+# !- Save an Image
+# cv.imwrite('images/beach_grayscale.jpg', gray)
+
 # Blur Image
 blur = cv.GaussianBlur(image_resized, (3,3), cv.BORDER_DEFAULT)
 cv.imshow('Blurred Image', blur)
