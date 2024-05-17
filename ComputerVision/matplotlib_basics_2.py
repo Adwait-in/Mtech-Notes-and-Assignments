@@ -15,7 +15,7 @@ grayscaled_beach_image_manual = np.dot(resized_beach_image[..., :3], [0.2989, 0.
 print('Image shape -> ', grayscaled_beach_image_manual.shape)
 
 # Show images in the same line with matplotlib
-plt.figure(figsize=(10, 6))
+plt.figure(figsize=(10, 6)) # figsize is in inches
 plt.subplot(1, 3, 1) # rows, columns, index
 plt.imshow(resized_beach_image)
 plt.title('Resized Original')
@@ -27,6 +27,3 @@ plt.imshow(grayscaled_beach_image_manual, cmap='gray')
 plt.title('Manual Gray Scale Original')
 
 plt.show()
-
-# Wait to prevent windows from closing immediatly
-cv.waitKey(0)
